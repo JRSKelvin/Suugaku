@@ -27,7 +27,6 @@ public class ObjectDetector2D : MonoBehaviour
         foreach (Collider2D obj in objectsNearby)
         {
             OnObjectDetected?.Invoke(obj.gameObject);
-            break;
         }
     }
 

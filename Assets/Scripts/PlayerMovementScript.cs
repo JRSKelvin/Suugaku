@@ -30,22 +30,18 @@ public class PlayerMovementScript : MonoBehaviour
         if (angle > -22.5f && angle <= 67.5f)
         {
             animator.Play("Walk_R"); // Right
-            Debug.Log("Right");
         }
         else if (angle > 67.5f && angle <= 157.5f)
         {
             animator.Play("Walk_B"); // Up
-            Debug.Log("Up");
         }
         else if (angle > 157.5f || angle <= -112.5f)
         {
             animator.Play("Walk_L"); // Left
-            Debug.Log("Left");
         }
         else if (angle > -112.5f && angle <= -22.5f)
         {
             animator.Play("Walk_F"); // Down
-            Debug.Log("Down");
         }
     }
 }

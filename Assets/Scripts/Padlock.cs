@@ -33,19 +33,4 @@ public class Padlock : MonoBehaviour
             digitTexts[i].text = currentCode[i].ToString();
         }
     }
-
-    public void Submit()
-    {
-        for (int i = 0; i < 4; i++)
-        {
-            if (currentCode[i] == GameManager.Instance.correctPassKey[i])
-            {
-                if (i == currentCode.Length - 1)
-                {
-                    Debug.Log("Padlock open");
-                }
-                else continue;
-            }
-        }
-    }
 }

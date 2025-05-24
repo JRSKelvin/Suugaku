@@ -18,10 +18,9 @@ public class GameData : MonoBehaviour
         }
     }
 
-    public void SwapDifficulty()
+    public void SwapDifficulty(Difficulty difficulty)
     {
-        if (difficulty == Difficulty.Easy) difficulty = Difficulty.Hard;
-        else difficulty = Difficulty.Easy;
+        this.difficulty = difficulty;
     }
 }
 

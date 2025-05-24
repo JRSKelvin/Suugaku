@@ -7,6 +7,7 @@ public class QuestionScroll : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (hiddenSpot.Length == 0) return;
         int randomSpot = Random.Range(0, hiddenSpot.Length);
         transform.parent = hiddenSpot[randomSpot].transform;
         transform.localPosition = Vector2.zero;

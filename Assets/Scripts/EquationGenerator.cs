@@ -6,24 +6,16 @@ public class EquationGenerator : MonoBehaviour
 {
     public string[] questions { get { return equationTexts; } }
     private string[] equationTexts = new string[4];
-    [SerializeField] TextMeshProUGUI feedbackText;
-    private List<(int, int)> correctAnswers = new List<(int, int)>(); // Store (x, y) integer solutions
     private int[] askedVariables = new int[4]; // 0 = ask for x, 1 = ask for y
-    public string correctPassKey = ""; // The correct pass key
+    public int[] correctPassKey { get; private set; } // The correct pass key
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GenerateEquation();
+        correctPassKey = new int[4];
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void GenerateEquation()
+    public void GenerateEquation()
     {
         for (int i = 0; i < 4; i++)
         {
@@ -40,45 +32,39 @@ public class EquationGenerator : MonoBehaviour
             int b2 = Random.Range(1, 6);
             int c2 = a2 * x + b2 * y; // Ensure integer solution
 
-            // Store the correct (x, y)
-            correctAnswers.Add((x, y));
-
             // Step 3: Randomly decide whether to ask for x or y
             askedVariables[i] = Random.Range(0, 2);
-
+            correctPassKey[i] = askedVariables[i] == 0 ? x : y ;
+            Debug.Log(correctPassKey[i]);
             string variable = askedVariables[i] == 0 ? "x" : "y";
-            equationTexts[i] = $"{a1}x + {b1}y = {c1}\n{a2}x + {b2}y = {c2}\n\nFind {variable}.";
+            equationTexts[i] = $"{FormatCoefficient(a1)}x + {FormatCoefficient(b1)}y = {c1}\n{FormatCoefficient(a2)}x + {FormatCoefficient(b2)}y = {c2}\n\nFind {variable}.";
         }
     }
 
-    public void CheckAnswer()
+    public void GenerateEasyEquation()
     {
-        string playerPassKey = "";
-
         for (int i = 0; i < 4; i++)
         {
-            int recognizedNumber = 0; // Get the recognized number
-            if (recognizedNumber == -1)
-            {
-                feedbackText.text = "⚠️ Please write a valid number!";
-                feedbackText.color = Color.yellow;
-                return;
-            }
+            // Randomly generate x and y values between 0-9
+            int x = Random.Range(1, 10);
+            int y = Random.Range(1, 10);
 
-            int correctValue = askedVariables[i] == 0 ? correctAnswers[i].Item1 : correctAnswers[i].Item2;
+            // Compute sums for the two equations
+            int sum1 = x + y;
+            int sum2 = x - y;
 
-            playerPassKey += recognizedNumber.ToString();
-        }
+            askedVariables[i] = Random.Range(0, 2);
+            correctPassKey[i] = askedVariables[i] == 0 ? x : y ;
+            Debug.Log(correctPassKey[i]);
+            string variable = askedVariables[i] == 0 ? "x" : "y";
 
-        if (playerPassKey == correctPassKey)
-        {
-            feedbackText.text = "✅ Correct! Pass Key Accepted!";
-            feedbackText.color = Color.green;
+            // Create equation strings
+            equationTexts[i] = $"x + y = {sum1}\nx - y = {sum2}\n\nFind {variable}.";
         }
-        else
-        {
-            feedbackText.text = "❌ Wrong Pass Key! Try Again.";
-            feedbackText.color = Color.red;
-        }
+    }
+
+    private string FormatCoefficient(int coef)
+    {
+        return (coef == 1) ? "" : coef.ToString();
     }
 }

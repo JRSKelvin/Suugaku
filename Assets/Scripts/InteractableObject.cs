@@ -15,5 +15,8 @@ public class InteractableObject : MonoBehaviour
 
         transform.position = new Vector2(transform.position.x + offset.x, transform.position.y + offset.y);
         isInteracted = true;
+
+        gameObject.tag = "Untagged";
+        // Destroy(GetComponent<BoxCollider2D>());
     }
 }
