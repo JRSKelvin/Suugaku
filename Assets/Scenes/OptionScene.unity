@@ -184,8 +184,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -252,8 +252,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -35.2782, y: -121.19766}
-  m_SizeDelta: {x: 2048.1218, y: 292.3953}
+  m_AnchoredPosition: {x: 0.0000066757, y: 0}
+  m_SizeDelta: {x: 650.0472, y: 78.8717}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &178798560
 GameObject:
@@ -637,8 +637,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -142, y: 247.62}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -41, y: 106}
+  m_SizeDelta: {x: 28.7643, y: 28.7643}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1064284320
 GameObject:
@@ -724,8 +724,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -810,8 +810,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -838, y: 250}
-  m_SizeDelta: {x: 458.7266, y: 95.2319}
+  m_AnchoredPosition: {x: -239, y: 103.02}
+  m_SizeDelta: {x: 167.2228, y: 34.716}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1190470126
 MonoBehaviour:
@@ -860,8 +860,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -946,8 +946,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 163.98, y: 245.24}
-  m_SizeDelta: {x: 327.9593, y: 95.2319}
+  m_AnchoredPosition: {x: 47.012985, y: 105.31542}
+  m_SizeDelta: {x: 94.3352, y: 27.3928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1398753158
 MonoBehaviour:
@@ -996,8 +996,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1162,8 +1162,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -150.84521, y: 250}
-  m_SizeDelta: {x: 191.1053, y: 147.8621}
+  m_AnchoredPosition: {x: -43.5443, y: 106.68458}
+  m_SizeDelta: {x: 54.9701, y: 42.5315}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1454733361
 MonoBehaviour:
@@ -1339,8 +1339,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 203}
-  m_SizeDelta: {x: 433.4149, y: 137.8261}
+  m_AnchoredPosition: {x: -7, y: 85}
+  m_SizeDelta: {x: 326.3842, y: 52.0923}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663272084
 MonoBehaviour:
@@ -1471,8 +1471,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 554.5747, y: 250}
-  m_SizeDelta: {x: 191.1053, y: 147.8621}
+  m_AnchoredPosition: {x: 146, y: 106}
+  m_SizeDelta: {x: 59.6827, y: 46.1777}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1752396480
 MonoBehaviour:
@@ -1602,8 +1602,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 835, y: 247.62}
-  m_SizeDelta: {x: 327.9593, y: 95.2319}
+  m_AnchoredPosition: {x: 233.57758, y: 105.256714}
+  m_SizeDelta: {x: 102.4226, y: 29.7412}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1781353582
 MonoBehaviour:
@@ -1652,8 +1652,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1890,7 +1890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
